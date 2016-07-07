@@ -1,0 +1,20 @@
+{
+  "name": "defter",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "homedir": "^0.6.0",
+    "keepass.io": "github:neoxid/keepass.io",
+    "lodash": "^4.13.1",
+    "minimist": "^1.2.0",
+    "prompt-autocomplete": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
