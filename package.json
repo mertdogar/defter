@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "engine": {
+    "node": ">=4.2.2"
+  },
+  "bin": {
+    "defter": "./index.js"
+  },
   "dependencies": {
     "colors": "^1.1.2",
     "homedir": "^0.6.0",
@@ -15,6 +21,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Mert Dogar",
   "license": "ISC"
 }
