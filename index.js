@@ -102,7 +102,7 @@ function showHelp() {
     showVersion();
     console.log('');
     console.log('set database and credentials: '.white);
-    console.log('defter -init -db /db/path -key /key/path -password pass'.gray);
+    console.log('defter --init --db /db/path --key /key/path --password pass'.gray);
     console.log('');
     console.log('open/browse database: '.white);
     console.log('defter'.gray);

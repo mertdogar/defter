@@ -8,4 +8,4 @@ defter is a lightweight password manager for keepass dbs. Now, defter only suppo
 
 #configuring db path & credentials
 
-```defter -init -db /db/path -key /key/path -password pass```
+```defter --init --db /db/path --key /key/path --password pass```
