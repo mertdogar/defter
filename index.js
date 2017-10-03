@@ -158,6 +158,10 @@ readConfig()
                     clipboard.copy(match.password.value);
                 }
             });
+
+            if (argv._.length > 0) {
+                process.stdin.emit('data', argv._.join(' '));
+            }
         });
     })
     .catch(err => {
