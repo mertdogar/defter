@@ -11,6 +11,7 @@ const _ = require('lodash');
 const colors = require('colors');
 const argv = require('minimist')(process.argv.slice(2));
 const configPath = path.join(homedir(), '.defterrc.json');
+const clipboard = require('copy-paste');
 
 
 function readConfig() {
@@ -150,9 +151,12 @@ readConfig()
 
             const entryKeys = _.map(entries, entry => entry.key.value);
             ask('Search:', entryKeys, (err, answer) => {
-                print(_.find(entries, entry => {
-                    return entry.key.value == answer;
-                }));
+                const match = _.find(entries, entry => entry.key.value == answer);
+                print(match);
+
+                if (match && match.password && match.password.value) {
+                    clipboard.copy(match.password.value);
+                }
             });
         });
     })
